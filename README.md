@@ -22,7 +22,7 @@ consistently achieves a superior trade-off between accuracy and efficiency than 
 various resource constraints. In particular, with a single model and single scale, 
 E2ENet achieves comparable accuracy on the large-scale challenge AMOS-CT, while saving 
 over 68% parameter count and 29% FLOPs in the inference phase, compared with the 
-previous best-performing method.
+previous best-performing method. 
 
 # Requirements
 For a full list of software packages and version numbers, see the file ```requirement.txt```.
@@ -33,10 +33,9 @@ For a full list of software packages and version numbers, see the file ```requir
 
  Put your raw dataset in the correct folder (nnUNet_raw_data_base/nnUNet_raw_data/TaskXXX_MYTASK
 ```bash
-nnunet/experiment_planning/nnUNet_plan_and_preprocess.py -t xxx 
+python -u nnunet/experiment_planning/nnUNet_plan_and_preprocess.py -t xxx 
 ```
 XXX is the integer identifier associated with your Task name TaskXXX_MYTASK.
-
 
 ### STEP 2: Model training
 
@@ -65,7 +64,7 @@ python -u simple_predict.py -o $OUTPUT_FOLDER -m 3d_fullres -t XXX --Tconv shift
 ### STEP 4: Results evaluating on the provided metrics
 
 ```bash
-python evaluator.py -ref nnUNet_raw_data_base/nnUNet_raw_data/TaskXXX/labelsVa -pred $OUTPUT_FOLDER
+python -u evaluator.py -ref nnUNet_raw_data_base/nnUNet_raw_data/TaskXXX/labelsVa -pred $OUTPUT_FOLDER
 ```
 
 # Acknowledgements
