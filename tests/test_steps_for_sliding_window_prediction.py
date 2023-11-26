@@ -15,7 +15,7 @@ import unittest
 import unittest2
 
 import numpy as np
-from nnunet.network_architecture.neural_network import SegmentationNetwork
+from e2enet.network_architecture.neural_network import SegmentationNetwork
 
 
 class TestSlidingWindow(unittest2.TestCase):

@@ -126,8 +126,8 @@ them as well and thereby exactly follow the same structure. [This](https://drive
 is where you can download the MSD data for reference. 
 
 **NEW:** There now is a utility with which you can generate the dataset.json automatically. You can find it 
-[here](../nnunet/dataset_conversion/utils.py) (look for the function `generate_dataset_json`). 
-See [Task120](../nnunet/dataset_conversion/Task120_Massachusetts_RoadSegm.py) for an example on how to use it. And read 
+[here](../e2enet/dataset_conversion/utils.py) (look for the function `generate_dataset_json`). 
+See [Task120](../e2enet/dataset_conversion/Task120_Massachusetts_RoadSegm.py) for an example on how to use it. And read 
 its documentation!
 
 Here is the content of the dataset.json from the Prostate task:
@@ -157,7 +157,7 @@ Here is the content of the dataset.json from the Prostate task:
 Note that we truncated the "training" and "test" lists for clarity. You need to specify all the cases in there. If you 
 don't have test images (imagesTs does not exist) you can leave "test" blank: `"test": []`.
 
-Please also have a look at the python files located [here](../nnunet/dataset_conversion). They show how we created our 
+Please also have a look at the python files located [here](../e2enet/dataset_conversion). They show how we created our 
 custom dataset.jsons for a range of public datasets.
 
 ## How to use decathlon datasets
@@ -203,9 +203,9 @@ This example here is intended for demonstrating how nnU-Net can be used with
 'regular' 2D images. We selected the massachusetts road segmentation dataset for this because it can be obtained 
 easily, it comes with a good amount of training cases but is still not too large to be difficult to handle.
     
-See [here](../nnunet/dataset_conversion/Task120_Massachusetts_RoadSegm.py) for an example. 
+See [here](../e2enet/dataset_conversion/Task120_Massachusetts_RoadSegm.py) for an example. 
 This script contains a lot of comments and useful information. Also have a look 
-[here](../nnunet/dataset_conversion/Task089_Fluo-N2DH-SIM.py).
+[here](../e2enet/dataset_conversion/Task089_Fluo-N2DH-SIM.py).
 
 
 ## How to update an existing dataset
@@ -221,6 +221,6 @@ The best way of updating an existing dataset is (**choose one**):
 
 ## How to convert other image formats to nifti
 Please have a look at the following tasks:
-- [Task120](../nnunet/dataset_conversion/Task120_Massachusetts_RoadSegm.py): 2D png images
-- [Task075](../nnunet/dataset_conversion/Task075_Fluo_C3DH_A549_ManAndSim.py) and [Task076](../nnunet/dataset_conversion/Task076_Fluo_N3DH_SIM.py): 3D tiff
-- [Task089](../nnunet/dataset_conversion/Task089_Fluo-N2DH-SIM.py) 2D tiff
+- [Task120](../e2enet/dataset_conversion/Task120_Massachusetts_RoadSegm.py): 2D png images
+- [Task075](../e2enet/dataset_conversion/Task075_Fluo_C3DH_A549_ManAndSim.py) and [Task076](../e2enet/dataset_conversion/Task076_Fluo_N3DH_SIM.py): 3D tiff
+- [Task089](../e2enet/dataset_conversion/Task089_Fluo-N2DH-SIM.py) 2D tiff

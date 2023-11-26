@@ -16,16 +16,16 @@ import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 import argparse
 from batchgenerators.utilities.file_and_folder_operations import *
-from nnunet.run.default_configuration import get_default_configuration
-from nnunet.paths import default_plans_identifier
-from nnunet.run.load_pretrained_weights import load_pretrained_weights
-from nnunet.training.cascade_stuff.predict_next_stage import predict_next_stage
-from nnunet.training.network_training.nnUNetTrainer_simple import nnUNetTrainer_simple
-from nnunet.utilities.task_name_id_conversion import convert_id_to_task_name
+from e2enet.run.default_configuration import get_default_configuration
+from e2enet.paths import default_plans_identifier
+from e2enet.run.load_pretrained_weights import load_pretrained_weights
+from e2enet.training.cascade_stuff.predict_next_stage import predict_next_stage
+from e2enet.training.network_training.nnUNetTrainer_simple import nnUNetTrainer_simple
+from e2enet.utilities.task_name_id_conversion import convert_id_to_task_name
 import torch
-from nnunet.training.network_training import sparselearning
-from nnunet.training.network_training.sparselearning.core_channel import Masking, CosineDecay
-#from nnunet.utilities.visual_weights import add_vis_tensor
+from e2enet.training.network_training import sparselearning
+from e2enet.training.network_training.sparselearning.core_channel import Masking, CosineDecay
+#from e2enet.utilities.visual_weights import add_vis_tensor
 
 def str2bool(str):
     return True if str.lower() == 'true' else False

@@ -41,7 +41,7 @@ The following snippet makes the necessary adaptations to the plans file
 ```python
 from batchgenerators.utilities.file_and_folder_operations import *
 import numpy as np
-from nnunet.paths import preprocessing_output_dir
+from e2enet.paths import preprocessing_output_dir
 task_name = 'Task120_MassRoadsSeg'
 
 # if it breaks upon loading the plans file, make sure to run the Task120 dataset conversion and
@@ -69,7 +69,7 @@ Variant 2: patch size 256x256, batch size 60
 ```python
 from batchgenerators.utilities.file_and_folder_operations import *
 import numpy as np
-from nnunet.paths import preprocessing_output_dir
+from e2enet.paths import preprocessing_output_dir
 task_name = 'Task120_MassRoadsSeg'
 plans_fname = join(preprocessing_output_dir, task_name, 'nnUNetPlansv2.1_plans_2D.pkl')
 plans = load_pickle(plans_fname)

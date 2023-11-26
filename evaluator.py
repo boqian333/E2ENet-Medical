@@ -22,7 +22,7 @@ from multiprocessing.pool import Pool
 import numpy as np
 import pandas as pd
 import SimpleITK as sitk
-from nnunet.evaluation.metrics import ConfusionMatrix, ALL_METRICS
+from e2enet.evaluation.metrics import ConfusionMatrix, ALL_METRICS
 from batchgenerators.utilities.file_and_folder_operations import save_json, subfiles, join
 from collections import OrderedDict
 from batchgenerators.utilities.file_and_folder_operations import *
