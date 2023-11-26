@@ -33,7 +33,7 @@ For a full list of software packages and version numbers, see the file ```requir
 
  Put your raw dataset in the correct folder (nnUNet_raw_data_base/nnUNet_raw_data/TaskXXX_MYTASK
 ```bash
-python -u nnunet/experiment_planning/nnUNet_plan_and_preprocess.py -t xxx 
+python -u e2enet/experiment_planning/nnUNet_plan_and_preprocess.py -t xxx 
 ```
 XXX is the integer identifier associated with your Task name TaskXXX_MYTASK.
 
