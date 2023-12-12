@@ -24,7 +24,7 @@ E2ENet achieves comparable accuracy on the large-scale challenge AMOS-CT, while 
 over 68% parameter count and 29% FLOPs in the inference phase, compared with the 
 previous best-performing method. 
 
-[Link to paper](https://arxiv.org/abs/2312.04727)
+[Link to paper](https://arxiv.org/abs/2312.04727) 🍺
 
 
 # Requirements
